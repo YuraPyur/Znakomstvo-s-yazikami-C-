@@ -87,7 +87,7 @@
 // string first = Console.ReadLine();
 // int a = int.Parse(first);
 // int b = 2;
-// while (b < a)
+// while (b <= a)
 // {
 //     Console.WriteLine(b);
 //     b = b + 2;
