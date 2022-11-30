@@ -52,4 +52,10 @@
 //     x = (b2-b1)/(k1-k2);
 //     y = k1*x+b1;
 //     Console.WriteLine($"Координаты точки пересечения - ({x};{y})");
+//     Console.WriteLine("Координаты точки пересечения в виде массива:");
+//     double[] array = {x,y};
+//     for (int i = 0; i < array.Length; i++) 
+//     {
+//         Console.Write($"{array[i]} ");
+//     }  
 // }
