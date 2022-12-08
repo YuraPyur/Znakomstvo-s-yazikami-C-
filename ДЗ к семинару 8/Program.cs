@@ -198,11 +198,11 @@
 // void zapolnenie(int[,,] matr)
 // {
 //     int[] arr = new int[8];
-//     arr[0] = new Random().Next(0, 10);
+//     arr[0] = new Random().Next(10, 100);
 //     for (int i = 1; i < 8; i++)
 //     {
 //         bool x = false;
-//         int l = new Random().Next(0, 10);
+//         int l = new Random().Next(10, 100);
 //         for (int j = 0; j < i; j++)
 //         {
 //             if (arr[j] == l)
