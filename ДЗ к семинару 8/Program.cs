@@ -194,52 +194,48 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] array = new int[2, 2, 2];
-void zapolnenie(int[,,] matr)
-{
-    // int[]matr1 = new int[99];
-    // for (int i=0; i<100;i++)
-    // {
-    //     int x = new Random().Next(10, 100);
-    //     if (matr1[i] == x)
-    //     {
-    //         int y = new Random().Next(10, 100);
-    //         matr1[i]=y;
-    //     }
-    //     else continue;
-
-    // }
-
-    // int l = new Random().Next(10, 101); 
-    int[] arr = new int[8];
-    for (int i = 0; i < arr.Length; i++)
-    {
-        int x = new Random().Next(10, 101);
-        for (q = 0; q < 8; q++) { if (arr[q] == x) Povtor;
-        }
-    }
-    for (int i = 0; i < matr.GetLength(0); i++)
-    {
-        for (int j = 0; j < matr.GetLength(1); j++)
-        {
-            for (int k = 0; k < matr.GetLength(2); k++)
-            {
-
-                matr[i, j, k] = arr[i];
-
-                Console.Write(matr[i, j, k] + " ");
-            }
-        }
-    }
-}
-zapolnenie(array);
-
-
-
-
-
-
-
+// int[,,] array = new int[2, 2, 2];
+// void zapolnenie(int[,,] matr)
+// {
+//     int[] arr = new int[8];
+//     arr[0] = new Random().Next(0, 10);
+//     for (int i = 1; i < 8; i++)
+//     {
+//         bool x = false;
+//         int l = new Random().Next(0, 10);
+//         for (int j = 0; j < i; j++)
+//         {
+//             if (arr[j] == l)
+//             {
+//                 x = true;
+//                 break;
+//             }
+//         }
+//         if (x)
+//         {
+//             i--;
+//         }
+//         else
+//         {
+//             arr[i] = l;
+//         }
+//     }
+//     int o = 0;
+//     for (int i = 0; i < matr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < matr.GetLength(2); k++)
+//             {
+//                 matr[i, j, k] = arr[o];
+//                 o++;
+//                 Console.WriteLine($"{matr[i, j, k]}({i},{j},{k}) ");
+//             }
+//             Console.WriteLine();
+//         }
+//     }
+// }
+// zapolnenie(array);
 
 
 
