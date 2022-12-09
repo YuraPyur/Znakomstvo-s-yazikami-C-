@@ -6,13 +6,13 @@
 
 // Console.WriteLine("введите число");
 // int m = int.Parse(Console.ReadLine());
-// Console.WriteLine($"N = {m} -> " + $"{Sum(m)}");
+// Console.WriteLine($"N = {m} -> " + $"{ChisPoUbivaniu(m)}");
 
-// string Sum(int number)
+// string ChisPoUbivaniu(int number)
 // {
 
 //     if (number == 1) return "1 ";
-//     return $"{number} " + $"{Sum(number - 1)}";
+//     return $"{number} " + $"{ChisPoUbivaniu(number - 1)}";
 // }
 
 
@@ -27,13 +27,13 @@
 // int e = int.Parse(Console.ReadLine());
 // Console.WriteLine("Конец диапозона");
 // int m = int.Parse(Console.ReadLine());
-// Console.WriteLine($"Сумма натуральных чисел от {e} до {m} равна {Sum(m, e)}");
+// Console.WriteLine($"Сумма натуральных чисел от {e} до {m} равна {SumChiselDiapozona(m, e)}");
 
-// int Sum(int number, int end)
+// int SumChiselDiapozona(int number, int end)
 // {
 
 //     if (number == end) return end;
-//     return number + Sum(number - 1, end);
+//     return number + SumChiselDiapozona(number - 1, end);
 // }
 
 
@@ -45,20 +45,18 @@
 
 // Console.WriteLine("Первое неотрицательное число");
 // int e = int.Parse(Console.ReadLine());
-// int e1 = 0;
-// if (e>0) e1=e;
-// else Console.WriteLine($"Число {e} - отрицательное"); 
 // Console.WriteLine("Второе неотрицательное число");
 // int second = int.Parse(Console.ReadLine());
-// int second2=0;
-// if (second>0) second2=second;
-// else Console.WriteLine($"Число {second} - отрицательное");
-// Console.WriteLine($"Функция Аккермана: А({e1},{second2}) = {Sum(e1,second2)}");
+// if (e>-1 && second>-1) 
+// {
+//    Console.WriteLine($"Функция Аккермана: А({e},{second}) = {Akkerman(e,second)}");
+// }
+// else Console.WriteLine("Введите неотрицательные числа"); 
 
-// int Sum(int n, int m)
+// int Akkerman(int n, int m)
 // {
 //     if (n==0) return m+1;
-//     else if (n>0 && m==0) return Sum(n-1,1);
-//     return Sum(n-1,Sum(n,m-1));
+//     else if (n>0 && m==0) return Akkerman(n-1,1);
+//     return Akkerman(n-1,Akkerman(n,m-1));
 // }
 
